@@ -68,13 +68,14 @@ The database was designed as a relational database, tables can use keys from oth
   - **ERROR**: *Duplicate Entry for primary key:*
            This indicates that the Identification number for the data being inserted matches an existing entity in the database.
            
-  - **SOLUTION**: Query the database to see if the entity currently exists. If it does then update the fields necessary.
+      - **SOLUTION**: Query the database to see if the entity currently exists. If it does then update the fields necessary.
            If the entity does not exist then try inserting again. If nothing works contact us for support.
            
   - **ERROR**: *Data too long for column* 
            This indicates that the value given for one of the entries is longer than the allocated space.
            
-  - **SOLUTION**: Refer to the information below on spacing and sizes for data entries.
+     - **SOLUTION**: Refer to the information below on spacing and sizes for data entries.
+  
            ------------------------------------
            | Data type    |     Size          |
            | :---         |              ---: | 
@@ -86,7 +87,7 @@ The database was designed as a relational database, tables can use keys from oth
   - **Error**: *Incorrect integer value*
            This indicates that the value given in the specified field is not a number.
            
-  - **SOLUTION**: Check your insert script again to make sure a character wasn't typed
+      - **SOLUTION**: Check your insert script again to make sure a character wasn't typed
            
   ### For other unlisted errors and general support contact us for assistance.
   
