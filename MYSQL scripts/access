@@ -1,8 +1,0 @@
-<?php
-$con = @mysql_connect("localhost","demingjm","900720113");
-if(!$con) 
-{
-    echo("Connection to database server failed<br>");
-    exit();
-}
-?>
