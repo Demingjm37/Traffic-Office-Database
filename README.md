@@ -67,19 +67,24 @@ The database was designed as a relational database, tables can use keys from oth
   Here is a list of common errors and explanations for trouble shooting:
   - **ERROR**: *Duplicate Entry for primary key:*
            This indicates that the Identification number for the data being inserted matches an existing entity in the database.
+           
            **SOLUTION**: Query the database to see if the entity currently exists. If it does then update the fields necessary.
            If the entity does not exist then try inserting again. If nothing works contact us for support.
   - **ERROR**: *Data too long for column* 
            This indicates that the value given for one of the entries is longer than the allocated space.
+           
            **SOLUTION**: Refer to the information below on spacing and sizes for data entries.
-           | Data type | Size |
-           | ----------- | ----------- | 
-           | ID Number | 9 Digits |
-           | Name | 20 Characters|
-           | Phone Number | 10 digits no "-" |
-           | Dates | YYYY/MM/DD or using the date tool |
+           ------------------------------------
+           | Data type    |     Size          |
+           | :---         |              ---: | 
+           | ID Number    | 9 Digits          |
+           | Name         | 20 Characters     |
+           | Phone Number | 10 digits no "-"  |
+           | Dates        | Use the date tool |
+           ------------------------------------
   - **Error**: *Incorrect integer value*
            This indicates that the value given in the specified field is not a number.
+           
            **SOLUTION**: Check your insert script again to make sure a character wasn't typed
            
   ### For other unlisted errors and general support contact us for assistance.
