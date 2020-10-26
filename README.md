@@ -28,7 +28,7 @@ The database was designed as a relational database, tables can use keys from oth
 
 ## Examples
 - The information can be inserted into the database through either phpMyAdmin or at command line.
-  [Insert Example](images/insert.png)
+  ![Insert Example](images/insert.png)
   A new staff member has been added to the database via command line.
   The parameters for the staff member table are
   - First Name 
@@ -43,8 +43,8 @@ The database was designed as a relational database, tables can use keys from oth
   - Department number
 
 - The database can be built into any website with PHP
-  [Website Example](images/website.png)
-  [Website Example2](images/website2.png)
+  ![Website Example](images/website.png)
+  ![Website Example2](images/website2.png)
 
 ## Installation
    Installation is made quick and easy. To install the database in MySql follow these instructions.
