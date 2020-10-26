@@ -95,6 +95,6 @@ The database was designed as a relational database, tables can use keys from oth
   - Requests for fixes and additional features can be made to the Traffic Office Database gitHub
   - https://github.com/Demingjm37/Traffic-Office-Database.git
 ## License
-  The Traffic Office Database designs and scripts are licensed under the [MIT](https://github.com/Demingjm37/Traffic-Office-Database/blob/main/LICENSE)cense
+  The Traffic Office Database designs and scripts are licensed under the [MIT](https://github.com/Demingjm37/Traffic-Office-Database/blob/main/LICENSE)License
   
    
