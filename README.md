@@ -6,10 +6,11 @@ The traffic office database is a MySql database designed by Joseph Deming, Andy 
 2. [Features](#Features)
 3. [Examples](#Examples)
 4. [Installation](#Installation)
-5. [FAQ](#FAQ)
-6. [Support](#Support)
-7. [Contribute](#Contribute)
-8. [License](#License)
+5. [Equipment](#Equipment)
+6. [FAQ](#FAQ)
+7. [Support](#Support)
+8. [Contribute](#Contribute)
+9. [License](#License)
 
 ## Introduction
 This database was designed around the needs and specifications for a traffic office. This database is capable of tracking
@@ -60,9 +61,25 @@ The database was designed as a relational database, tables can use keys from oth
   6. Place the PHP files in the chosen web-directory with the Access file. 
   7. Installation Should now be complete, the database is ready for data and the website is ready to be viewed.
 
+## Equipment
+  The traffic office database comes with a series of MySql Scripts and PHP scripts.
+  - MySql Scripts
+    - create_traffic_office:
+      This script contains the instructions necessary to install the database. It creates all tables, sets the fields and the keys.
+    - drop:
+      This script contains the instructions to remove or "uninstall" the database. This can be used if there are errors made in the database, or if it simply needs to be reinstalled.
+  - PHP scripts
+    - For simplicity the PHP scripts and their use will not be listed out. 
+    - Each php script serves the same purpose. They build the PHP webpage and connect to the database.
+    - Index.html is the main page that contains fillable boxes to input data into the databaser.
+    - insert_.php is used for calling MySql functions when index.html is used.
+    
 ## FAQ
-  1. 
-  
+  1. Do the supplied PHP scripts have to be used?
+    a. No, any php script can be used to generate the webpage and connect to the database
+  2. Can phpMyAdmin be used?
+    a. Yes, although the instructions are written for command line use, PHP MyAdmin can be used to build and access the database.
+    
 ## Support
   Here is a list of common errors and explanations for trouble shooting:
   - **ERROR**: *Duplicate Entry for primary key*:
@@ -94,6 +111,7 @@ The database was designed as a relational database, tables can use keys from oth
 ## Contribute
   - Requests for fixes and additional features can be made to the Traffic Office Database gitHub
   - https://github.com/Demingjm37/Traffic-Office-Database.git
+  
 ## License
   The Traffic Office Database designs and scripts are licensed under the [MIT](https://github.com/Demingjm37/Traffic-Office-Database/blob/main/LICENSE)License
   
