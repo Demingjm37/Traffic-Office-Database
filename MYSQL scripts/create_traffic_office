@@ -1,0 +1,91 @@
+
+CREATE TABLE ticket (
+license_plate_num varchar (8) NOT NULL,
+state varchar(2) NOT NULL,
+ticket_num varchar(9) NOT NULL,
+date Date NOT NULL,
+violation_type varchar(20) NOT NULL,
+CONSTRAINT PRIMARY KEY (ticket_num));
+
+CREATE TABLE staff_member (
+employee_id varchar(9) NOT NULL,
+ssn varchar(9) NOT NULL,
+mgrssn varchar(9),
+first_n varchar(20) NOT NULL,
+minit char(1),
+last_n varchar(20) NOT NULL, 
+bday DATE, 
+phone_num int(10),
+position varchar(20),
+CONSTRAINT PRIMARY KEY(employee_id));
+
+CREATE TABLE zone(
+zone_id varchar(9) NOT NULL,
+zone_name varchar(20),
+CONSTRAINT PRIMARY KEY(zone_id));
+
+CREATE TABLE parking_lot (
+lot_num varchar(3) NOT NULL,
+initial_slots int(3) NOT NULL,
+zone_id varchar(9),
+CONSTRAINT PRIMARY KEY(lot_num),
+CONSTRAINT FOREIGN KEY(zone_id) REFERENCES zone(zone_id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE event(
+event_name varchar(20) NOT NULL,
+event_id varchar(9) NOT NULL,
+event_date DATE NOT NULL,
+event_type varchar(20),
+CONSTRAINT PRIMARY KEY(event_id));
+
+CREATE TABLE provider(
+provider_id varchar(9) NOT NULL,
+website_url varchar(50),
+phone_num integer(10) NOT NULL,
+CONSTRAINT PRIMARY KEY(provider_id));
+
+CREATE TABLE item(
+item_id varchar(9),
+item_name varchar(20),
+initial_count int(3),
+CONSTRAINT PRIMARY KEY(item_id)
+);
+
+CREATE TABLE supplies(
+provider_id varchar(9) NOT NULL,
+event_id varchar(9) NOT NULL,
+item_id varchar(9),
+item_quantity int(4) NOT NULL,
+CONSTRAINT FOREIGN KEY(provider_id) REFERENCES provider(provider_id) ON DELETE CASCADE ON UPDATE CASCADE,
+CONSTRAINT FOREIGN KEY(event_id) REFERENCES event(event_id) ON DELETE CASCADE ON UPDATE CASCADE,
+CONSTRAINT FOREIGN KEY(item_id) REFERENCES item(item_id) ON DELETE SET NULL ON UPDATE CASCADE
+);
+
+CREATE TABLE written_ticket(
+ticket_num varchar(9),
+violation_num int(3),
+employee_id varchar(9),
+CONSTRAINT PRIMARY KEY (violation_num),
+CONSTRAINT FOREIGN KEY (employee_id) REFERENCES staff_member(employee_id)
+     ON DELETE SET NULL ON UPDATE CASCADE,
+CONSTRAINT FOREIGN KEY (ticket_num) REFERENCES ticket(ticket_num)
+     ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE works_lot(
+lot_id varchar(9),
+employee_id varchar(9),
+CONSTRAINT FOREIGN KEY(lot_id) REFERENCES parking_lot(lot_num)
+ON DELETE CASCADE ON UPDATE CASCADE ,
+CONSTRAINT FOREIGN KEY(employee_id) REFERENCES staff_member(employee_id) ON DELETE set null ON UPDATE CASCADE
+);
+
+CREATE TABLE event_instance(
+event_id varchar(9),
+zone_id varchar(9),
+CONSTRAINT FOREIGN KEY(event_id) REFERENCES event(event_id) ON DELETE CASCADE ON UPDATE CASCADE
+,
+CONSTRAINT FOREIGN KEY(zone_id) REFERENCES zone(zone_id) ON DELETE set null ON UPDATE CASCADE
+);
+

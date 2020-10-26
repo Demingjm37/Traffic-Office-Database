@@ -1,0 +1,13 @@
+SET FOREIGN_KEY_CHECKS=0;
+DROP TABLE ticket;
+DROP TABLE staff_member;
+DROP TABLE parking_lot;
+DROP TABLE zone;
+DROP TABLE item;
+DROP TABLE event;
+DROP TABLE provider;
+DROP TABLE supplies;
+DROP TABLE written_ticket;
+DROP TABLE works_lot;
+DROP TABLE event_instance;
+SET FOREIGN_KEY_CHECKS=1;

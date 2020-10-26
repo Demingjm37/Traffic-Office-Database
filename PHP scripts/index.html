@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<body style= "background-color:powderblue;">
+</body>
+</html>
+<body>
+    <form action="insert_event.php" method="post">
+    <b>Add an Event:</b>
+    <br>
+    Event Name: <input type="text" name="event_name" />
+    <br>
+    Event ID: <input type="text" name="event_id" />
+    <br>
+    Date of Event: <input type="date" name="event_date" />
+    <br>
+    Type of Event: <input type="text" name="event_type" />
+    <br>
+    <input type="submit"/>
+    <br>
+    </form>
+    <body>
+    <html>
+    <br>
+    
+    <html>
+    <body>
+    <form action="insert_event_instance.php" method="post">
+    <b>Insert a new event instance:</b>
+    <br>
+    Event ID: <input type = “text” name="event_id"/>
+    <br>
+    Zone ID: <input type="text" name="zone_id"/>
+    <br>
+    <input type="submit"/>
+    </form>
+    </body>
+    </html>
+    <br>
+    <html>
+    <body>
+    <form action="insert_provider.php" method="post">
+    <b>Add a new supply provider:</b>
+    <br>
+    Provider ID: <input type="text" name="provider_id"/>
+    <br>
+    Website Url: <input type="text" name="website_url"/>
+    <br>
+    Phone Number(include dashes): <input type="text" name="phone_num"/>
+    <br>
+    <input type="submit"/>
+    <br>
+    </form>
+    </body>
+    </html>
+    <br>
+    
+    <html>
+    <body>
+    <form action="insert_item.php" method="post">
+    <b>Add a new item:</b>
+    <br>
+    Item ID: <input type="text" name="item_id"/>
+    <br>
+    Item Name: <input type="text" name="item_name"/>
+    <br>
+    Initial Count: <input type="text" name="initial_count"/>
+    </br>
+    <input type="submit"/>
+    </form>
+    </body>
+    </html>
+    <br>
+    <html>
+    <body>
+    <form action="insert_parking_lot.php" method="post">
+    <b>Insert a new parking lot:</b>
+    <br>
+    Lot number: <input type="text" name="lot_num"/>
+    <br>
+    Initial Slots: <input type="text" name="initial_slots"/>
+    <br>
+    Zone ID: <input type="text" name="zone_id"/>
+    <br>
+    <input type="submit" />
+    <br>
+    </form>
+    </body>
+    </html>
+    <br>
+    <html>
+    <body>
+    <form action="insert_staff_member.php" method="post">
+        <b>Insert Staff Member</b><br>
+        Employee_id: <input type="text" name="employee_id" />
+        <br>
+        SSN: <input type="text" name="ssn" />
+        <br>
+        Manager SSN: <input type="text" name="mgrssn" />
+        <br>
+        First Name: <input type="text" name="first_n" />
+        <br>
+        Middle Initial: <input type="text" name="minit" />
+        <br>
+        Last Name: <input type="text" name="last_n" />
+       <br>
+        Birth Date: <input type="date" name="bday" />
+       <br>
+        Phone Number(include dashes): <input type="text" name="phone_num" />
+        <br>
+        Position: <input type="text" name="position" />
+        <br>
+        <input type="submit" />
+    </form>
+    </body>
+    </html>
+    <br>
+    <html>
+    <body>
+    <form action="insert_supplies.php" method="post">
+        <b>Insert Supplies</b><br>
+        Provider Id: <input type="text" name="provider_id" />
+        <br>
+        Event Id: <input type="text" name="event_id" />
+        <br>
+        Item Id: <input type="text" name="item_id" />
+        <br>
+        Item Quantity: <input type="text" name="item_quantity" />
+        <br>
+    <input type="submit" />
+    </form>
+    </body>
+    </html>
+    <br>
+    <html>
+    <body>
+    <form action="insert_ticket.php" method="post">
+        <b>Insert Ticket</b><br>
+        License Plate Number: <input type="text" name="license_plate_num" />
+        <br>
+        State of License Plate: <input type="text" name="state" />
+       <br>
+        Ticket Number: <input type="text" name="ticket_num" />
+        <br>
+        Date of Ticket: <input type="date" name="date" />
+        <br>
+        Violation Type: <input type="text" name="violation_type" />
+        <br>
+    <input type="submit" />
+    </form>
+    </body>
+    </html>
+    <br>
+    <html>
+    <body>
+    <form action="insert_works_lot.php" method="post">
+        <b>Insert Works Lot</b><br>
+        Lot Id: <input type="text" name="lot_id" />
+        <br>
+        Employee Id: <input type="text" name="employee_id" />
+        <br>
+        <input type="submit" />
+    </form>
+    </body>
+    </html>
+    <br>
+    <html>
+    <body>
+    <form action="insert_written_ticket.php" method="post">
+        <b>Insert Written Ticket</b><br>
+        Ticket Number: <input type="text" name="ticket_num" />
+        <br>
+        Violation Number: <input type="text" name="violation_num" />
+        <br>
+        Employee ID: <input type="text" name="employee_id" />
+        <br>
+        <input type="submit" />
+    </form>
+    </body>
+    </html>
+    <br>
+    <html>
+
+<html>
+<body>
+<form action="insert_zone.php" method="post">
+    <b>Insert a Zone</b><br>
+    Zone ID: <input type="text" name="zone_id" />
+    <br>
+    Zone Name: <input type="text" name="zone_name" />
+    <br>
+    <input type="submit" />
+</form>
+</body>
+</html>
