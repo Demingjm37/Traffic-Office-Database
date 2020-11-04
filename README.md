@@ -52,9 +52,9 @@ The database was designed as a relational database, tables can use keys from oth
    1. Navigate to the directory where you wish to store the resources and PHP for this database.
    2. Place the "create_traffic_office" database script into the directory and launch MySql via command line.
    3. Once in MySql run the following commands: 
-   4. bash > CREATE DATABASE traffic_office;
-   5. bash > USE traffic_office
-   6. bash > source "path to script"
+   4. %> CREATE DATABASE traffic_office;
+   5. %> USE traffic_office
+   6. %> source "path to script"
    7. Now the database should be installed.
    8. An Access file will need to be constructed to give the PHP site access to the database.
       - This Access file should be named "Access" and requires login information to access the database.
